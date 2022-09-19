@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import Breadcrumb from "../../layouts/AdminLayout/Breadcrumb";
 import back4 from "../../assets/images/bg-images/bg4.jpg";
-import Logo from "../../assets/images/agbc logo - trans.png";
 
 import { Alert } from "react-bootstrap";
 import Config from "../../config/config.json";
@@ -13,6 +12,7 @@ class SignIn5 extends Component {
   state = {
     user: { username: "", password: "" },
     errors: "",
+    loading: false,
   };
 
   schema = {
@@ -21,7 +21,7 @@ class SignIn5 extends Component {
   };
 
   render() {
-    const { user, errors } = this.state;
+    const { user, errors, loading } = this.state;
 
     return (
       <React.Fragment>
@@ -39,9 +39,9 @@ class SignIn5 extends Component {
             <div className="card">
               <div className="card-body text-center">
                 <div className="mb-4">
-                  <img src={Logo} alt="Logo" width={225} height={130} />
+                  {/* <img src={Logo} alt="Logo" width={225} height={130} /> */}
                 </div>
-                <h3 className="mb-4">Sign in</h3>
+                <h3 className="mb-4">BMS</h3>
                 {errors && (
                   <Alert variant="danger">Invalid username or password</Alert>
                 )}
@@ -68,7 +68,7 @@ class SignIn5 extends Component {
                   </div>
                   <button
                     type="submit"
-                    disabled={this.validate()}
+                    disabled={this.validate() || loading}
                     className="btn btn-primary shadow-2 mb-4"
                   >
                     Login

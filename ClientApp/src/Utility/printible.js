@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card, Table } from "react-bootstrap";
-import Logo from "../assets/images/agbc logo (1).png";
+// import Logo from "../assets/images/agbc logo (1).png";
 
 class PrinTible extends Component {
   state = {
@@ -17,9 +17,9 @@ class PrinTible extends Component {
           <Card.Title>
             <div className="row">
               <div className="col-12">
-                <img src={Logo} width="200" height="150" alt="Logo" />
+                {/* <img src={Logo} width="200" height="150" alt="Logo" /> */}
                 <h3 className="mt-2">
-                  Ali Gobanimo Business Center
+                  BMS
                   <p className="float-right">{date.toDateString()}</p>
                 </h3>
                 <h5 className="mt-4">{title}</h5>

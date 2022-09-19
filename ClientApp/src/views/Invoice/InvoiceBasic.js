@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { useReactToPrint } from "react-to-print";
 import { Link } from "react-router-dom";
 
-import darkLogo from "../../assets/images/logo-dark.png";
-import Logo from "../../assets/images/agbc logo.png";
+// import darkLogo from "../../assets/images/logo-dark.png";
+// import Logo from "../../assets/images/agbc logo.png";
 import Config from "../../config/config.json";
 import Services from "../../services/HttpServices";
 
@@ -55,25 +55,23 @@ const InvoiceBasic = (props) => {
                         <tr>
                           <td>
                             <Link to="#" className="b-brand">
-                              <img
+                              {/* <img
                                 className="img-fluid"
                                 src={Logo}
                                 alt="Gradient Able Logo"
                                 width="250"
-                              />
+                              /> */}
                             </Link>
                           </td>
                         </tr>
                         <tr>
-                          <td>Ali Gobanimo Business Center </td>
+                          <td>BMS </td>
                         </tr>
                         <tr>
-                          <td>
-                            Hargeisa,Somaliland Hargeisa, 26th june 2th avenue
-                          </td>
+                          <td>Ethopia Jijiga, 26th june 2th avenue</td>
                         </tr>
                         <tr>
-                          <td>+252654408469</td>
+                          <td>+252907005112</td>
                         </tr>
                       </tbody>
                     </table>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Dropdown } from "react-bootstrap";
 import JwtDecode from "jwt-decode";
 
-import Avatar1 from "../../../../assets/images/user/avatar-1.jpg";
+import Avatar1 from "../../../../assets/images/user/avatar-2.jpg";
 
 class NavRight extends Component {
   state = {
